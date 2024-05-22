@@ -18,6 +18,9 @@ body {
 .logo {
     color:#fff;
     text-decoration: none;
+    font-size: 28px;
+    font-family: syne;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -34,6 +37,10 @@ body {
     color: #fff;
 }
 
+.active {
+    font-weight: bold;
+}
+
 /* Wrapper for intro-boks og image-boks */
 .content-wrapper {
     display: flex;
@@ -42,7 +49,7 @@ body {
     padding: 20px;
     max-width: 1300px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
     
 }
 
@@ -50,11 +57,11 @@ body {
 .intro-box {
     flex: 1;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #EFECE3;
     display: flex;
     flex-direction: column;
- padding-top: 100px;
-    max-height: 400px; 
+    padding-top: 150px;
+    max-height: 500px; 
     overflow: auto; 
 }
 
@@ -63,6 +70,9 @@ body {
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 48px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: lighter;
 
 }
 
@@ -70,6 +80,7 @@ body {
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
+    
 }
 
 button {
@@ -80,6 +91,8 @@ button {
     cursor: pointer;
     align-self: start; 
     margin-left: 40px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 /* Bildeboks */
@@ -89,32 +102,33 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 400px; 
+    max-height: 500px; 
     overflow: hidden; 
-    background-color: #F0F0F0;
+    background-color: #EFECE3;
 }
 
 .image-box img {
     max-width: 100%;
-  
     object-fit: cover;
 }
+
 /* Ferdighetscontainer */
 .skills-container {
     width: 100%; 
-    max-width: 1600px; 
+    max-width: 1900px; 
     height: 450px;
     display: flex;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 20px;
-    background-color: #E6DAD1;
+    background-color: #f0f0f0;
 }
 
 .skills-heading h3 {
     margin: 0;
     color: #23190E;
-    font-size: 42px;
+    font-size: 43px;
+    font-family: syne;
 }
 
 .skills-list ul {
@@ -136,8 +150,116 @@ button {
 
 .skills-list {
     flex: 1; 
-    margin-top: 100px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
     font-size: 18px;
+}
+
+/*Contact-container-home*/
+.contact-container-home {
+    max-width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;  
+    background-color: #EFECE3;   
+}
+
+.contact-flexbox-home {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    gap: 100px;   
+    align-items: center; 
+}
+
+.contact-image-home {
+    object-fit: cover;  
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-position: bottom;
+}
+
+.contact-large-text {
+    color: #2d2d2d;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 48px;
+    text-align: center; 
+    margin-bottom: 0;
+}
+
+.contact-small-text {
+    text-align: center; 
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-item-bottom {
+    text-align: center;
+}
+
+.cta-contact-bottom {
+    padding: 10px 28px 10px 28px;
+    background-color: transparent; 
+    color: #23190e; 
+    border: 1px solid #23190e; 
+    border-radius: 0; 
+    font-size: 16px; 
+    font-weight: 500;
+    cursor: pointer;   
+    text-align: center; 
+    text-decoration: none;
+    line-height: 30px; 
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;   
+}
+
+.cta-contact-bottom:hover {
+    color: rgba(45, 45, 45, 0.5); 
+    border-color: rgba(45, 45, 45, 0.5); 
+}
+
+/*Contact me*/
+.contact-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #EFECE3; 
+    height:700px;
+    max-width: 1800px; 
+    margin: 0 auto; 
+}
+
+.contact-container {
+    margin: 0 auto; 
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover; 
 }
 
 /*Footer*/
@@ -153,9 +275,13 @@ button {
     margin-top: 40px;
 }
 
+.footer-container ul {
+    list-style-type: none;
+}
+
 .footer-heading {
     font-size: 22px;
-    font-family: 'Playfair Display', serif;
+
     margin-bottom: 10px;
     color: #fff;
 }
@@ -167,8 +293,7 @@ button {
     font-size: 20px;
 }
 
-.li-footer>a,
-.icon {
+.li-footer>a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -198,5 +323,6 @@ button {
 .copy-rights {
     background-color:#333;
     padding-left: 5%;
-    padding-bottom: 111px;
+    padding-bottom: 60px;
+    color: #fff;
 }
