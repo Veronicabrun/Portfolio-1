@@ -35,25 +35,25 @@ body {
 .footer-container ul li a {
     text-decoration: none;
     color: #fff;
-    position: relative; /* Legg til relativ posisjon */
+    position: relative; 
 }
 
 .nav-links li a::after,
 .footer-container ul li a::after {
-    content: ''; /* Legg til innhold for pseudoelementet */
-    display: block; /* Gjør det til en blokk */
-    width: 0; /* Starter uten bredde */
-    height: 2px; /* Tykkelsen på understreken */
-    background-color: #fff; /* Farge på understreken */
-    position: absolute; /* Absolutt posisjon relativt til lenken */
-    bottom: -2px; /* Plasser understreken under lenken */
-    left: 0; /* Start fra venstre kant av lenken */
-    transition: width 0.3s ease; /* Legg til overgang for smidig effekt */
+    content: ''; 
+    display: block; 
+    width: 0; 
+    height: 2px; 
+    background-color: #fff; 
+    position: absolute; 
+    bottom: -2px; 
+    left: 0; 
+    transition: width 0.3s ease; 
 }
 
 .nav-links li a:hover::after,
 .footer-container ul li a:hover::after {
-    width: 100%; /* Endre bredden til 100% når du holder over lenken */
+    width: 100%; 
 }
 
 .active {
@@ -68,9 +68,31 @@ body {
     padding: 20px;
     max-width: 1300px;
     margin: 0 auto;
-    margin-top: 30px;
-    
+    margin-top: 30px;   
 }
+
+.cta-button {
+    padding: 10px 28px;
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    font-size: 16px; 
+    font-weight: 500;
+    cursor: pointer;   
+    text-align: center; 
+    text-decoration: none;
+    line-height: 30px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 40px; 
+    margin-top: 10px; 
+    align-self: start; 
+}
+
+.cta-button:hover {
+    background-color: rgba(45, 45, 45, 0.5); 
+    color: #fff;
+}
+
 
 /* Informasjonsboks */
 .intro-box {
@@ -79,9 +101,14 @@ body {
     background-color: #EFECE3;
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    justify-content: center; /* Sentrer innholdet horisontalt */
     max-height: 500px; 
     overflow: auto; 
+}
+
+.highlight {
+    color:#333;
+    font-weight: bold;
 }
 
 .intro-box h1 {
@@ -100,18 +127,6 @@ body {
     margin-right: 40px;
     font-size: 20px;
     
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    align-self: start; 
-    margin-left: 40px;
-    margin-top: 10px;
-    font-size: 16px;
 }
 
 /* Bildeboks */
@@ -255,8 +270,8 @@ button {
 .project-card {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
-    width: 350px;
+    padding: 30px;
+    max-width: 450px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -264,7 +279,12 @@ button {
 .project-card h1 {
     margin-top: 0;
     font-family: syne;
-    font-size: 21px;
+    font-size: 27px;
+}
+
+.project-card p {
+    font-size: 18px;
+    font-family: lato;
 }
 
 .project-card img {
@@ -281,7 +301,6 @@ button {
     color: #333;
     border: 1px solid #333;
     padding: 5px 10px;
-    border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
 
