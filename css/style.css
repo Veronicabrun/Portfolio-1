@@ -1,4 +1,3 @@
-/* Generelle stiler */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,9 +31,29 @@ body {
     margin-right: 20px;
 }
 
-.nav-links li a {
+.nav-links li a,
+.footer-container ul li a {
     text-decoration: none;
     color: #fff;
+    position: relative; /* Legg til relativ posisjon */
+}
+
+.nav-links li a::after,
+.footer-container ul li a::after {
+    content: ''; /* Legg til innhold for pseudoelementet */
+    display: block; /* Gjør det til en blokk */
+    width: 0; /* Starter uten bredde */
+    height: 2px; /* Tykkelsen på understreken */
+    background-color: #fff; /* Farge på understreken */
+    position: absolute; /* Absolutt posisjon relativt til lenken */
+    bottom: -2px; /* Plasser understreken under lenken */
+    left: 0; /* Start fra venstre kant av lenken */
+    transition: width 0.3s ease; /* Legg til overgang for smidig effekt */
+}
+
+.nav-links li a:hover::after,
+.footer-container ul li a:hover::after {
+    width: 100%; /* Endre bredden til 100% når du holder over lenken */
 }
 
 .active {
@@ -65,7 +84,7 @@ body {
     overflow: auto; 
 }
 
-.intro-box h2 {
+.intro-box h1 {
     margin-left: 40px;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -124,7 +143,7 @@ button {
     background-color: #f0f0f0;
 }
 
-.skills-heading h3 {
+.skills-heading h2 {
     margin: 0;
     color: #23190E;
     font-size: 43px;
@@ -223,42 +242,98 @@ button {
     border-color: rgba(45, 45, 45, 0.5); 
 }
 
-/*Contact me*/
-.contact-container {
+/*Procects page*/
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #EFECE3;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 350px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h1 {
+    margin-top: 0;
+    font-family: syne;
+    font-size: 21px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-links a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/*Contact me, About me*/
+.contact-container,
+.about-container {
     display: flex;
     align-items: center;
     padding: 20px;
     background-color: #EFECE3; 
     height:700px;
-    max-width: 1800px; 
-    margin: 0 auto; 
+    max-width: 1300px;   
 }
 
-.contact-container {
+.contact-container,
+.about-container {
     margin: 0 auto; 
+    margin-top: 40px;
 }
 
-.contact-info {
+.contact-info,
+.about-info {
     flex: 1;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 30px; 
+    font-size: 18px;
 }
 
-.contact-info h2 {
+.contact-info h1,
+.about-info h1 {
     margin-top: 0;
+    font-family: syne;
+    font-size: 36px;
 }
 
-.contact-image {
+.contact-image,
+.about-image {
     flex: 1;
     padding: 20px;
 }
 
-.contact-image img {
-    max-width: 100%;
+.contact-image img,
+.about-image img {
     height: 600px;
+    width: 600px;
     object-fit: cover; 
 }
 
@@ -269,7 +344,7 @@ button {
     justify-content: center;
     gap: 10em;
     background-color: #333;
-    color:#fff;
+    color: #fff;
     padding-bottom: 90px;
     padding-top: 50px;
     margin-top: 40px;
@@ -281,47 +356,43 @@ button {
 
 .footer-heading {
     font-size: 22px;
-
     margin-bottom: 10px;
     color: #fff;
 }
-    
-.help>ul {
-    display: block;
+
+.help > ul,
+.explore > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
     margin: 0;
-    padding: 0; 
     font-size: 20px;
 }
 
-.li-footer>a {
+.li-footer > a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
 }
 
-.help {
-    color: #fff;  
-    flex: 1; 
-    line-height: 1,6;
-}
-
-.explor,
-.follow {
-    flex: 1; 
+.help,
+.explore {
+    color: #fff;
+    flex: 1;
     line-height: 1.6;
-    font-size: 20px; 
 }
 
 .line-footer {
     width: 90%;
     display: block;
     border-top: 1px solid;
-    color:#fff; 
+    color: #fff;
     margin-top: -20px;
 }
 
 .copy-rights {
-    background-color:#333;
+    background-color: #333;
     padding-left: 5%;
     padding-bottom: 60px;
     color: #fff;
