@@ -12,6 +12,7 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    position: relative;
 }
 
 .logo {
@@ -72,25 +73,29 @@ body {
 }
 
 .cta-button {
-    padding: 10px 28px;
-    background-color: #333; 
-    color: #fff; 
-    border: none; 
-    font-size: 16px; 
+    padding: 10px 28px 10px 28px;
+    background-color: transparent;
+    color: #23190e;
+    border: 1px solid #23190e;
+    border-radius: 0;
+    font-size: 16px;
     font-weight: 500;
-    cursor: pointer;   
-    text-align: center; 
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
-    line-height: 30px; 
-    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 30px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
     margin-left: 40px; 
     margin-top: 10px; 
     align-self: start; 
 }
 
-.cta-button:hover {
-    background-color: rgba(45, 45, 45, 0.5); 
-    color: #fff;
+.cta-contact-bottom:hover,
+.cta-button:hover,
+.project-links a:hover,
+.cta-button-about:hover {
+    color: rgba(45, 45, 45, 0.5); 
+    border-color: rgba(45, 45, 45, 0.5); 
 }
 
 
@@ -101,7 +106,7 @@ body {
     background-color: #EFECE3;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Sentrer innholdet horisontalt */
+    justify-content: center; 
     max-height: 500px; 
     overflow: auto; 
 }
@@ -119,14 +124,12 @@ body {
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-weight: lighter;
-
 }
 
 .intro-box p {
     margin-left: 40px;
     margin-right: 40px;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 
 /* Bildeboks */
@@ -252,11 +255,6 @@ body {
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;   
 }
 
-.cta-contact-bottom:hover {
-    color: rgba(45, 45, 45, 0.5); 
-    border-color: rgba(45, 45, 45, 0.5); 
-}
-
 /*Procects page*/
 .projects-container {
     display: flex;
@@ -302,11 +300,6 @@ body {
     border: 1px solid #333;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
-}
-
-.project-links a:hover {
-    background-color: #333;
-    color: #fff;
 }
 
 /*Contact me, About me*/
@@ -356,6 +349,23 @@ body {
     object-fit: cover; 
 }
 
+.cta-button-about {
+    padding: 10px 28px 10px 28px;
+    background-color: transparent;
+    color: #23190e;
+    border: 1px solid #23190e;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px; 
+    align-self: start; 
+}
+
 /*Footer*/
 .footer-container {
     display: grid;
@@ -364,8 +374,8 @@ body {
     gap: 10em;
     background-color: #333;
     color: #fff;
-    padding-bottom: 90px;
-    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     margin-top: 40px;
 }
 
@@ -416,3 +426,91 @@ body {
     padding-bottom: 60px;
     color: #fff;
 }
+
+/*@media*/
+@media(max-width:1696px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:1248px) {
+    .contact-container, 
+    .about-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .contact-image img, 
+    .about-image img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width:1000px) {
+    .contact-flexbox-home {
+        gap: 0;
+    }
+}
+
+@media(max-width:861px) {
+    .content-wrapper {
+        flex-direction: column;
+    } 
+  
+    .intro-box {
+        padding-left: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:751px) {
+    .skills-container {
+        flex-direction: column;
+    } 
+    .contact-flexbox-home  {
+        flex-direction: column;
+    }
+
+    .contact-flexbox-home {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:571px) {
+    .navbar ul {
+   
+    }
+
+}
+
+@media(max-width:500px) {
+    .intro-box p {
+        font-size: 17px;
+    } 
+
+    .intro-box h1,
+    .contact-large-text {
+        font-size: 36px;
+    }
+
+    .skills-heading {
+        font-size: 32px;
+    }
+
+    .skills-list,
+    .contact-small-text,
+    .project-card p,
+    .contact-text {
+        font-size: 17px;
+    }
+
+    .contact-info h1, 
+    .about-info h1 {
+        font-size: 27px;
+    }
+
+}
+
