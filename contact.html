@@ -8,20 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
            <a class="logo" href="/">Portfolio</a>
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label> 
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="projects.html">PROJECTS</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html" class="active">CONTACT </a></li>
+            <li><a href="contact.html" class="active">CONTACT</a></li>
         </ul>
     </nav>
-    <menu>
+    <main>
         <div class="contact-container">
             <div class="contact-info">
                 <h1>Contact Me</h1>
@@ -29,37 +32,38 @@
                 whether full-time, part-time, or as an intern/trainee. If you have an interesting 
                 position that might be a good fit, I would love to hear from you. Please feel free to get in touch for a chat.</p>
                 <p>Email: vbpedersen@outlook.com</p>
-                <p>LinkedIn: <a href="#">linkedin.com/eksempel</a></p>
+                <a href="https://www.linkedin.com/in/veronica-brun-pedersen-2860bb249/" target="_blank">My LinkedIn Profile</a>
             </div>
             <div class="contact-image">
                 <img src="images/contact-me.jpg" alt="A laptop on a table showing women's hands typing on the PC.">
             </div>
         </div>
-    </menu>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="help">
+                <h2 class="footer-heading">HELP</h2>
+                <ul>
+                    <li class="li-footer">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="explore">
+                <h2 class="footer-heading">PROJECTS</h2>
+                <ul>
+                    <li class="li-footer">
+                        <a href="projects.html">Read</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="line-footer">
+        <p class="copy-rights">&copy; 2024 Veronica Brun-pedersen. All rights reserved.</p>
+    </footer>
 </body>
-<footer>
-    <div class="footer-container">
-     <div class="help">
-       <h2 class="footer-heading">HELP</h2>
-       <ul>
-        <li class="li-footer">
-            <a href="contact.html">Contact</a>
-        </li>
-        <li class="li-footer">
-            <a href="about.html">About</a>
-        </li>
-       </ul>
-     </div>
-     <div class="explore">
-       <h2 class="footer-heading">PROJECTS</h2> 
-       <ul>
-        <li class="li-footer">
-            <a href="projects.html">Read</a>
-        </li>
-       </ul>
-     </div> 
-    </div>
-    <hr class="line-footer">
-      <p class="copy-rights">&copy; 2024 Veronica Brun-pedersen. All rights reserved.</p>
-</footer>
 </html>
+

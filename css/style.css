@@ -8,11 +8,9 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    position: relative;
 }
 
 .logo {
@@ -21,11 +19,21 @@ body {
     font-size: 28px;
     font-family: syne;
     font-weight: bold;
+    margin-top: 10px;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon i {
+    display: none;
+}
+ 
 .nav-links {
     list-style-type: none;
     display: flex;
+    padding: 0;
 }
 
 .nav-links li {
@@ -75,8 +83,8 @@ body {
 .cta-button {
     padding: 10px 28px 10px 28px;
     background-color: transparent;
-    color: #23190e;
-    border: 1px solid #23190e;
+    color: #000000;
+    border: 1px solid #000000;
     border-radius: 0;
     font-size: 16px;
     font-weight: 500;
@@ -97,7 +105,6 @@ body {
     color: rgba(45, 45, 45, 0.5); 
     border-color: rgba(45, 45, 45, 0.5); 
 }
-
 
 /* Informasjonsboks */
 .intro-box {
@@ -163,7 +170,7 @@ body {
 
 .skills-heading h2 {
     margin: 0;
-    color: #23190E;
+    color: #000000;
     font-size: 43px;
     font-family: syne;
 }
@@ -171,7 +178,7 @@ body {
 .skills-list ul {
     list-style-type: disc;
     padding: 0;
-    color: #23190E;
+    color: #000000;
 }
 
 .skills-list li {
@@ -221,7 +228,7 @@ body {
 }
 
 .contact-large-text {
-    color: #2d2d2d;
+    color: #000000;
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: lighter;
@@ -243,8 +250,8 @@ body {
 .cta-contact-bottom {
     padding: 10px 28px 10px 28px;
     background-color: transparent; 
-    color: #23190e; 
-    border: 1px solid #23190e; 
+    color: #000000; 
+    border: 1px solid #000000; 
     border-radius: 0; 
     font-size: 16px; 
     font-weight: 500;
@@ -296,8 +303,8 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     text-decoration: none;
-    color: #333;
-    border: 1px solid #333;
+    color: #000000;
+    border: 1px solid #000000;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -352,8 +359,8 @@ body {
 .cta-button-about {
     padding: 10px 28px 10px 28px;
     background-color: transparent;
-    color: #23190e;
-    border: 1px solid #23190e;
+    color: #000000;
+    border: 1px solid #000000;
     border-radius: 0;
     font-size: 16px;
     font-weight: 500;
@@ -374,8 +381,8 @@ body {
     gap: 10em;
     background-color: #333;
     color: #fff;
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 20px;
     margin-top: 40px;
 }
 
@@ -440,6 +447,7 @@ body {
     .about-container {
         flex-direction: column;
         height: 100%;
+        align-items: unset;
     }
 
     .contact-image img, 
@@ -466,11 +474,25 @@ body {
     }
 }
 
+@media(max-width:831px) {
+    .navbar {
+        flex-direction: column; 
+        display: block;
+        line-height: 30px;
+        padding-left: 15px;
+    }  
+}
+
 @media(max-width:751px) {
     .skills-container {
         flex-direction: column;
     } 
-    .contact-flexbox-home  {
+
+    .skills-heading {
+        margin-right: 70px;
+    }
+    
+    .contact-flexbox-home {
         flex-direction: column;
     }
 
@@ -479,21 +501,41 @@ body {
     }
 }
 
-@media(max-width:571px) {
-    .navbar ul {
-   
+@media(max-width:500px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
 
-}
+    .navbar .nav-links {
+        display: none;
+    }
+    
+    .menu-icon i {
+        display: block;      
+    }  
+    
+    #menu-toggle:checked ~ .nav-links {
+        display: block;
+    }
+    
+    #menu-toggle:checked + .menu-icon i {
+         display: inline;
+    }
 
-@media(max-width:500px) {
+    .logo {
+        display: none;
+    }
+
     .intro-box p {
         font-size: 17px;
     } 
 
     .intro-box h1,
     .contact-large-text {
-        font-size: 36px;
+         font-size: 36px;
     }
 
     .skills-heading {
@@ -512,5 +554,32 @@ body {
         font-size: 27px;
     }
 
-}
+    .contact-image img, 
+    .about-image img {
+        height: 500px;
+    }
+
+    .contact-info, 
+    .about-info {
+        font-size: 17px;
+    }
+
+    .footer-container {
+        gap: 7em;
+    }
+
+    .help > ul, 
+    .explore > ul {
+        font-size: 16px;
+    }
+
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    .copy-rights {
+        font-size: 13px;
+    }
+}  
+
 
