@@ -1,6 +1,6 @@
 # Portfolio-1
 
-![Alt Tekst]()
+![Alt Tekst](images/2024-06-07_21h54_05.png)
 
 
 # Veronica's Portfolio
