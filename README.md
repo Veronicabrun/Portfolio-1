@@ -1,6 +1,6 @@
 # Portfolio-1
 
-![Alt Tekst](![2024-06-07_21h54_05](https://github.com/Veronicabrun/Portfolio-1/assets/105516840/d0a82f4f-b625-46ec-9ba0-2d30dcf68abc)
+![Alt Tekst](![2024-06-07_21h54_05](https://github.com/Veronicabrun/Portfolio-1/blob/846a8e30d7412d4d7854d69de0fde303a0c277c1/images/2024-06-07_21h54_05.png)
 )
 
 # Veronica's Portfolio
