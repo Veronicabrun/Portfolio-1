@@ -19,7 +19,7 @@ My portfolio is hosted on Netlify. You can view it [here](#).
 
 ## Contact
 Feel free to reach out to me for any inquiries or collaboration opportunities:
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn:** [Your LinkedIn Profile](#)
+- **Email:** [vbpedersen@outlook.com](mailto:your-email@example.com)
+- **LinkedIn:** [LinkedIn](https://linkedin.com/in/veronica-brun-pedersen-2860bb249)
 
 Thank you for visiting my portfolio!
