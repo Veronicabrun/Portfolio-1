@@ -1,6 +1,6 @@
 # Portfolio-1
 
-![Alt Tekst](images/2024-06-07_21h54_05.png)
+![The front of a portfolio page in beige, grey, white and black tones. Image of woman's hands typing on a laptop.](images/2024-06-07_21h54_05.png)
 
 
 # Veronica's Portfolio
