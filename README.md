@@ -1,6 +1,7 @@
 # Portfolio-1
 
-![Alt Tekst]("C:\Users\vbped\OneDrive\Skrivebord\Skole\GitHub\2024-06-07_21h54_05.png")
+![Alt Tekst](![2024-06-07_21h54_05](https://github.com/Veronicabrun/Portfolio-1/assets/105516840/d0a82f4f-b625-46ec-9ba0-2d30dcf68abc)
+)
 
 # Veronica's Portfolio
 
