@@ -1,6 +1,6 @@
 # Portfolio-1
 
-![Alt Tekst](URL til bildet)
+![Alt Tekst]("C:\Users\vbped\OneDrive\Skrivebord\Skole\GitHub\2024-06-07_21h54_05.png")
 
 # Veronica's Portfolio
 
