@@ -18,7 +18,7 @@ Welcome to my portfolio! Here, you'll find a collection of my work showcasing my
 
 ## How to View My Portfolio
 
-My portfolio is hosted on Netlify. You can view it [https://portfoliobyveronicabp.netlify.app/](#).
+My portfolio is hosted on Netlify. You can view it [https://portfoliobyveronicabp.netlify.app/].
 
 ## Contact
 Feel free to reach out to me for any inquiries or collaboration opportunities:
