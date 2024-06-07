@@ -1,5 +1,7 @@
 # Portfolio-1
 
+![The website's front page. Navigation menu at the top, followed by an image with green water and mountains in the background.](https://1drv.ms/i/s!AkIeCPIBQXdkgtpoWxnOI0A_Ndb4Cw?e=yXNJxb)
+
 # Veronica's Portfolio
 
 Welcome to my portfolio! Here, you'll find a collection of my work showcasing my skills in web development, design, and more.
