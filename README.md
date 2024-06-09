@@ -5,7 +5,7 @@
 
 # Veronica's Portfolio
 
-Welcome to my portfolio! Here, you'll find a collection of my work showcasing my skills in web development, design, and more.
+Welcome to my portfolio! Here, you'll find a collection of my work showcasing my skills in web development, design, and more. This website show all the three projects I have mad in my first year as a online Front-End Development Student at Noroff.
 
 ## Portfolio Requirements
 
