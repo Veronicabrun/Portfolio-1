@@ -1,92 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-           <a class="logo" href="/">Portfolio</a>
-        </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="projects.html" class="active">PROJECTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="projects-container">
-            <div class="project-card">
-                <h1>Rainydays</h1>
-                <img src="images/rainydays-img.png" alt="The homepage of a rain jacket online store, with an image of tall mountains and green water in 
-                the background, and a woman in the foreground wearing a rain jacket">
-                <p>This is my first project at Noroff. It's an e-commerce website specializing in selling rain jackets. 
-                I've started building the website with HTML and CSS, and then expanded it further with JavaScript.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/Veronicabrun/Rainydays-JS.git" target="_blank">GitHub Repo</a>
-                    <a href="https://grand-stardust-f81e12.netlify.app/" target="_blank">Live Site</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h1>Community Science Museum</h1>
-                <img src="images/community-science-museum-img.png" alt="The homepage of a museum's website, featuring a large dinosaur head as the cover 
-                image against a turquoise background.">
-                <p>This was my semester assignment at Noroff. It was meant to be a responsive interactive science museum, 
-                targeting primary and middle school children (ages 7-15) and families with young children. This website is constructed using HTML and CSS.</p>
-                <div class="project-links">
-                    <a href="https://github.com/Veronicabrun/Semester-Project-1.git" target="_blank">GitHub Repo</a>
-                    <a href="https://eclectic-starlight-157592.netlify.app/" target="_blank">Live Site</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h1>Design Studio</h1>
-                <img src="images/design-studio-img.png" alt="The homepage of a museum's website, featuring a large dinosaur head as the cover image against 
-                a turquoise background.">
-                <p>This was my exam assignment at Noroff. The website is a responsive blog focusing on interior design, constructed using HTML, CSS, 
-                and JavaScript, with JavaScript utilized to make a call to the WordPress REST API to fetch the data.</p>
-                <div class="project-links">
-                    <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Veronicabrun.git" target="_blank">GitHub Repo</a>
-                    <a href="https://sweet-speculoos-2088a4.netlify.app" target="_blank">Live Site</a>
-                </div>
-            </div>
-        </div>  
-    </main>  
-  <footer>
-    <div class="footer-container">
-     <div class="help">
-       <h2 class="footer-heading">HELP</h2>
-       <ul>
-        <li class="li-footer">
-            <a href="contact.html">Contact</a>
-        </li>
-        <li class="li-footer">
-            <a href="about.html">About</a>
-        </li>
-       </ul>
-     </div>
-     <div class="explore">
-       <h2 class="footer-heading">PROJECTS</h2> 
-       <ul>
-        <li class="li-footer">
-            <a href="projects.html">Read</a>
-        </li>
-       </ul>
-     </div> 
-    </div>
-    <hr class="line-footer">
-      <p class="copy-rights">&copy; 2024 Veronica Brun-pedersen. All rights reserved.</p>
-  </footer>
-</body>
-</html>
 
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="logo" href="index.html">Portfolio</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="projects.html" class="active">PROJECTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="projects-section">
+        <div class="projects-container">
+          <!-- COMING SOON (ØVERST) -->
+         <div class="project-card coming-soon">
+  <h1>Coming Soon</h1>
+
+  <img
+    src="images/nordicecom-img.png"
+    alt="Preview image of a project currently under development."
+  />
+
+  <p>
+    This project is currently under development. More information coming soon.
+  </p>
+
+  <div class="project-links">
+    <span class="btn-disabled">GitHub</span>
+    <span class="btn-disabled">View project</span>
+  </div>
+</div>
+
+
+          <!-- RETROBID (NYTT PROSJEKT) -->
+          <div class="project-card">
+            <h1>Retrobid</h1>
+
+            <img
+              src="images/retrobid-img.png"
+              alt="Preview of the Retrobid auction platform."
+            />
+
+            <p>
+              Retrobid is an auction platform where users can create listings, place bids and manage auctions.
+              Built with HTML, CSS, JavaScript and API integration.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/Veronicabrun/semester-project-2"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://delicate-melomakarona-e3a048.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                View project
+              </a>
+            </div>
+          </div>
+
+          <!-- DESIGN STUDIO (OPPDATERT LIVE LINK) -->
+          <div class="project-card">
+            <h1>Design Studio</h1>
+
+            <img
+              src="images/design-studio-img.png"
+              alt="A responsive interior design blog website."
+            />
+
+            <p>
+              This was my exam assignment at Noroff. The website is a responsive blog focusing on interior design,
+              constructed using HTML, CSS and JavaScript, using the WordPress REST API.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Veronicabrun.git"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://project-exam-1-design-studio.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                View project
+              </a>
+            </div>
+          </div>
+
+          <!-- COMMUNITY SCIENCE MUSEUM -->
+          <div class="project-card">
+            <h1>Community Science Museum</h1>
+
+            <img
+              src="images/community-science-museum-img.png"
+              alt="The homepage of a museum website with a dinosaur as cover image."
+            />
+
+            <p>
+              This was my semester assignment at Noroff. It was meant to be a responsive interactive science museum,
+              targeting primary and middle school children (ages 7–15) and families with young children.
+              This website is constructed using HTML and CSS.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/Veronicabrun/Semester-Project-1.git"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://eclectic-starlight-157592.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                View project
+              </a>
+            </div>
+          </div>
+
+          <!-- RAINYDAYS (SIST) -->
+          <div class="project-card">
+            <h1>Rainydays</h1>
+
+            <img
+              src="images/rainydays-img.png"
+              alt="The homepage of a rain jacket e-commerce store."
+            />
+
+            <p>
+              This is my first project at Noroff. It's an e-commerce website specializing in selling rain jackets.
+              I've started building the website with HTML and CSS, and then expanded it further with JavaScript.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/Veronicabrun/Rainydays-JS.git"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://grand-stardust-f81e12.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                View project
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="help">
+          <h2 class="footer-heading">HELP</h2>
+          <ul>
+            <li class="li-footer"><a href="contact.html">Contact</a></li>
+            <li class="li-footer"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="explore">
+          <h2 class="footer-heading">PROJECTS</h2>
+          <ul>
+            <li class="li-footer"><a href="projects.html">Read</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="line-footer" />
+      <p class="copy-rights">&copy; 2024 Veronica Brun-pedersen. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
