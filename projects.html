@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
+    <title>Projects | Veronica Brun-Pedersen</title>
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Syne:wght@400..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&family=Syne:wght@400..800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,13 +19,16 @@
   </head>
 
   <body>
+    <!-- NAV -->
     <nav class="navbar">
       <div class="logo">
         <a class="logo" href="index.html">Portfolio</a>
       </div>
 
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
 
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
@@ -36,31 +39,36 @@
     </nav>
 
     <main>
-      <section class="projects-section">
+      <section class="projects-section" aria-labelledby="projects-title">
+        <!-- PAGE TITLE -->
+        <div class="projects-heading">
+          <h1 id="projects-title" class="page-title">Projects</h1>
+        </div>
+
         <div class="projects-container">
-          <!-- COMING SOON (ØVERST) -->
-         <div class="project-card coming-soon">
-  <h1>Coming Soon</h1>
+          <!-- COMING SOON -->
+          <article class="project-card coming-soon">
+            <h2 class="project-title">Coming Soon</h2>
 
-  <img
-    src="images/nordicecom-img.png"
-    alt="Preview image of a project currently under development."
-  />
+            <img
+              src="images/nordicecom-img.png"
+              alt="Preview image of a project currently under development."
+            />
 
-  <p>
-    This project is currently under development. More information coming soon.
-  </p>
+            <p>
+              This project is currently under development. More information
+              coming soon.
+            </p>
 
-  <div class="project-links">
-    <span class="btn-disabled">GitHub</span>
-    <span class="btn-disabled">View project</span>
-  </div>
-</div>
+            <div class="project-links">
+              <span class="btn-disabled">GitHub</span>
+              <span class="btn-disabled">View project</span>
+            </div>
+          </article>
 
-
-          <!-- RETROBID (NYTT PROSJEKT) -->
-          <div class="project-card">
-            <h1>Retrobid</h1>
+          <!-- RETROBID -->
+          <article class="project-card">
+            <h2 class="project-title">Retrobid</h2>
 
             <img
               src="images/retrobid-img.png"
@@ -68,8 +76,9 @@
             />
 
             <p>
-              Retrobid is an auction platform where users can create listings, place bids and manage auctions.
-              Built with HTML, CSS, JavaScript and API integration.
+              Retrobid is an auction platform where users can create listings,
+              place bids and manage auctions. Built with HTML, CSS, JavaScript
+              and API integration.
             </p>
 
             <div class="project-links">
@@ -88,11 +97,11 @@
                 View project
               </a>
             </div>
-          </div>
+          </article>
 
-          <!-- DESIGN STUDIO (OPPDATERT LIVE LINK) -->
-          <div class="project-card">
-            <h1>Design Studio</h1>
+          <!-- DESIGN STUDIO -->
+          <article class="project-card">
+            <h2 class="project-title">Design Studio</h2>
 
             <img
               src="images/design-studio-img.png"
@@ -100,8 +109,9 @@
             />
 
             <p>
-              This was my exam assignment at Noroff. The website is a responsive blog focusing on interior design,
-              constructed using HTML, CSS and JavaScript, using the WordPress REST API.
+              This was my exam assignment at Noroff. The website is a responsive
+              blog focusing on interior design, constructed using HTML, CSS and
+              JavaScript, using the WordPress REST API.
             </p>
 
             <div class="project-links">
@@ -120,11 +130,11 @@
                 View project
               </a>
             </div>
-          </div>
+          </article>
 
           <!-- COMMUNITY SCIENCE MUSEUM -->
-          <div class="project-card">
-            <h1>Community Science Museum</h1>
+          <article class="project-card">
+            <h2 class="project-title">Community Science Museum</h2>
 
             <img
               src="images/community-science-museum-img.png"
@@ -132,9 +142,10 @@
             />
 
             <p>
-              This was my semester assignment at Noroff. It was meant to be a responsive interactive science museum,
-              targeting primary and middle school children (ages 7–15) and families with young children.
-              This website is constructed using HTML and CSS.
+              This was my semester assignment at Noroff. It was meant to be a
+              responsive interactive science museum, targeting primary and
+              middle school children (ages 7–15) and families with young
+              children. This website is constructed using HTML and CSS.
             </p>
 
             <div class="project-links">
@@ -153,11 +164,11 @@
                 View project
               </a>
             </div>
-          </div>
+          </article>
 
-          <!-- RAINYDAYS (SIST) -->
-          <div class="project-card">
-            <h1>Rainydays</h1>
+          <!-- RAINYDAYS -->
+          <article class="project-card">
+            <h2 class="project-title">Rainydays</h2>
 
             <img
               src="images/rainydays-img.png"
@@ -165,8 +176,10 @@
             />
 
             <p>
-              This is my first project at Noroff. It's an e-commerce website specializing in selling rain jackets.
-              I've started building the website with HTML and CSS, and then expanded it further with JavaScript.
+              This is my first project at Noroff. It's an e-commerce website
+              specializing in selling rain jackets. I've started building the
+              website with HTML and CSS, and then expanded it further with
+              JavaScript.
             </p>
 
             <div class="project-links">
@@ -185,15 +198,16 @@
                 View project
               </a>
             </div>
-          </div>
+          </article>
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div class="footer-container">
         <div class="help">
-          <h2 class="footer-heading">HELP</h2>
+          <h4 class="footer-heading">HELP</h4>
           <ul>
             <li class="li-footer"><a href="contact.html">Contact</a></li>
             <li class="li-footer"><a href="about.html">About</a></li>
@@ -201,7 +215,7 @@
         </div>
 
         <div class="explore">
-          <h2 class="footer-heading">PROJECTS</h2>
+          <h4 class="footer-heading">PROJECTS</h4>
           <ul>
             <li class="li-footer"><a href="projects.html">Read</a></li>
           </ul>
@@ -209,7 +223,9 @@
       </div>
 
       <hr class="line-footer" />
-      <p class="copy-rights">&copy; 2024 Veronica Brun-pedersen. All rights reserved.</p>
+      <p class="copy-rights">
+        &copy; 2024 Veronica Brun-Pedersen. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>

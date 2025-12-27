@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:"Lato", Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -204,8 +204,9 @@ body {
     text-align: left;
 }
 
+/* ✅ ENDRET: Skills-kategorioverskrifter skal være Lato */
 .skills-group h3 {
-    font-family: syne;
+    font-family: lato;
     font-size: 20px;
     margin: 0 0 12px 0;
     color: #000000;
@@ -287,6 +288,18 @@ body {
 }
 
 /*Procects page*/
+.projects-heading {
+    max-width: 1300px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.projects-heading h1 {
+    font-family: syne;
+    font-size: 36px;
+    margin: 0;
+}
+
 .projects-section {
     width: 100%;
     background-color: #EFECE3;
@@ -321,9 +334,12 @@ body {
     padding-top: 16px;
 }
 
-.project-card h1 {
+/* ✅ ENDRET: Prosjektkort-overskrifter skal være Lato (h2.project-title + backup) */
+.project-card .project-title,
+.project-card h1,
+.project-card h2 {
     margin-top: 0;
-    font-family: syne;
+    font-family: lato;
     font-size: 27px;
 }
 

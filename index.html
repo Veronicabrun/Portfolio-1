@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veronica's Frontend Portfolio</title>
@@ -9,175 +9,172 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Syne:wght@400..800&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
     />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAV -->
     <nav class="navbar">
-        <div class="logo">
-            <a class="logo" href="index.html">Portfolio</a>
-        </div>
+      <div class="logo">
+        <a class="logo" href="index.html">Portfolio</a>
+      </div>
 
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
-        </label>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
 
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">HOME</a></li>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
     </nav>
 
-    <!-- INTRO -->
-    <div class="content-wrapper">
+    <main>
+      <!-- INTRO -->
+      <section class="content-wrapper">
         <div class="intro-box">
-            <h1>Hello, Veronica here!</h1>
+          <h1 class="page-title">Hello, Veronica here!</h1>
 
-            <p>
-                I'm currently completing my studies in
-                <span class="highlight">Front-End Development</span> at Noroff and
-                will graduate in spring 2026. I have completed all coursework and
-                now have my final exams remaining. Throughout my studies, I've
-                developed a strong interest in
-                <span class="highlight">UX/UI Design</span>, and I'm particularly
-                motivated by creating intuitive, visually engaging user
-                experiences.
-            </p>
+          <p>
+            I'm currently completing my studies in
+            <span class="highlight">Front-End Development</span> at Noroff and
+            will graduate in spring 2026. I have completed all coursework and
+            now have my final exams remaining. Throughout my studies, I've
+            developed a strong interest in
+            <span class="highlight">UX/UI Design</span>, and I'm particularly
+            motivated by creating intuitive, visually engaging user experiences.
+          </p>
 
-            <a href="projects.html" class="cta-button">View Projects</a>
+          <a href="projects.html" class="cta-button">View Projects</a>
         </div>
 
         <div class="image-box">
-            <img
-                src="images/contact-me.jpg"
-                alt="A laptop on a table showing women's hands typing on the PC."
-            />
+          <img
+            src="images/contact-me.jpg"
+            alt="A laptop on a table showing women's hands typing on the PC."
+          />
         </div>
-    </div>
+      </section>
 
-    <!-- SKILLS -->
-    <div class="skills-container">
-        <!-- NY: wrapper som holder innholdet sentrert -->
+      <!-- SKILLS -->
+      <section class="skills-container" aria-labelledby="skills-title">
         <div class="skills-inner">
-            <div class="skills-heading">
-                <h2>My Skills</h2>
+          <div class="skills-heading">
+            <h2 id="skills-title" class="section-title">My Skills</h2>
+          </div>
+
+          <div class="skills-list">
+            <div class="skills-group">
+              <h3 class="skills-subtitle">Development</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Sass (SCSS)</li>
+                <li>Bootstrap</li>
+                <li>REST APIs</li>
+                <li>WordPress (CMS &amp; REST API)</li>
+              </ul>
             </div>
 
-            <div class="skills-list">
-                <div class="skills-group">
-                    <h3>Development</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React</li>
-                        <li>Sass (SCSS)</li>
-                        <li>Bootstrap</li>
-                        <li>REST APIs</li>
-                        <li>WordPress (CMS &amp; REST API)</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Workflow &amp; Tooling</h3>
-                    <ul>
-                        <li>Git &amp; GitHub</li>
-                        <li>Vite</li>
-                        <li>VS Code</li>
-                        <li>Netlify</li>
-                        <li>Environment variables (.env)</li>
-                        <li>ESLint &amp; Prettier</li>
-                        <li>Husky (pre-commit hooks)</li>
-                        <li>Playwright (E2E testing)</li>
-                        <li>Vitest (unit testing)</li>
-                    </ul>
-                </div>
-
-                <div class="skills-group">
-                    <h3>Design / UX</h3>
-                    <ul>
-                        <li>UX/UI Design</li>
-                        <li>Interaction Design</li>
-                        <li>Responsive Design</li>
-                        <li>Accessibility (basic)</li>
-                        <li>Adobe XD</li>
-                        <li>Hotjar</li>
-                    </ul>
-                </div>
+            <div class="skills-group">
+              <h3 class="skills-subtitle">Workflow &amp; Tooling</h3>
+              <ul>
+                <li>Git &amp; GitHub</li>
+                <li>Vite</li>
+                <li>VS Code</li>
+                <li>Netlify</li>
+                <li>Environment variables (.env)</li>
+                <li>ESLint &amp; Prettier</li>
+                <li>Husky (pre-commit hooks)</li>
+                <li>Playwright (E2E testing)</li>
+                <li>Vitest (unit testing)</li>
+              </ul>
             </div>
+
+            <div class="skills-group">
+              <h3 class="skills-subtitle">Design / UX</h3>
+              <ul>
+                <li>UX/UI Design</li>
+                <li>Interaction Design</li>
+                <li>Responsive Design</li>
+                <li>Accessibility (basic)</li>
+                <li>Adobe XD</li>
+                <li>Hotjar</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
+      </section>
 
-    <!-- CONTACT CTA -->
-    <main>
-        <section class="contact-container-home">
-            <div class="contact-flexbox-home">
-                <figure>
-                    <img
-                        class="contact-image-home"
-                        src="images/contact-me2.jpg"
-                        alt="A smiling lady on the phone with blond hair and reading glasses."
-                    />
-                </figure>
+      <!-- CONTACT CTA -->
+      <section class="contact-container-home" aria-labelledby="contact-title">
+        <div class="contact-flexbox-home">
+          <figure>
+            <img
+              class="contact-image-home"
+              src="images/contact-me2.jpg"
+              alt="A smiling lady on the phone with blond hair and reading glasses."
+            />
+          </figure>
 
-                <div>
-                    <div class="contact-text-home">
-                        <h3 class="contact-large-text">Get In Touch</h3>
-                        <p class="contact-small-text">
-                            I'm always interested in exciting job offers!
-                        </p>
-                    </div>
-
-                    <div class="cta-item-bottom">
-                        <a href="contact.html" class="cta-contact-bottom">
-                            CLICK HERE
-                        </a>
-                    </div>
-                </div>
+          <div>
+            <div class="contact-text-home">
+              <h2 id="contact-title" class="section-title contact-large-text">
+                Get In Touch
+              </h2>
+              <p class="contact-small-text">
+                I'm always interested in exciting job offers!
+              </p>
             </div>
-        </section>
+
+            <div class="cta-item-bottom">
+              <a href="contact.html" class="cta-contact-bottom">CLICK HERE</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-container">
-            <div class="help">
-                <h4 class="footer-heading">HELP</h4>
-                <ul>
-                    <li class="li-footer">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="li-footer">
-                        <a href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="explore">
-                <h4 class="footer-heading">PROJECTS</h4>
-                <ul>
-                    <li class="li-footer">
-                        <a href="projects.html">Read</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="help">
+          <h4 class="footer-heading">HELP</h4>
+          <ul>
+            <li class="li-footer">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="li-footer">
+              <a href="about.html">About</a>
+            </li>
+          </ul>
         </div>
 
-        <hr class="line-footer" />
-        <p class="copy-rights">
-            &copy; 2024 Veronica Brun-pedersen. All rights reserved.
-        </p>
-    </footer>
-</body>
-</html>
+        <div class="explore">
+          <h4 class="footer-heading">PROJECTS</h4>
+          <ul>
+            <li class="li-footer">
+              <a href="projects.html">Read</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <hr class="line-footer" />
+      <p class="copy-rights">
+        &copy; 2024 Veronica Brun-pedersen. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
