@@ -157,7 +157,7 @@ body {
     object-fit: cover;
 }
 
-/* ---------- SKILLS (FIXED & CENTERED) ---------- */
+/*SKILLS*/
 .skills-container {
     width: 100%;
     margin: 0 auto;
@@ -172,7 +172,7 @@ body {
     padding: 0 20px;
 }
 
-/* Seksjonstittel */
+/* Section title */
 .skills-heading {
     width: 100%;
     text-align: center;
@@ -186,7 +186,6 @@ body {
     font-family: syne;
 }
 
-/* Selve kolonnegruppen */
 .skills-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(220px, 1fr));
@@ -197,14 +196,13 @@ body {
     justify-items: center;
 }
 
-/* Hver kolonne */
+/* Each column */
 .skills-group {
     width: 100%;
     max-width: 260px;
     text-align: left;
 }
 
-/* ✅ ENDRET: Skills-kategorioverskrifter skal være Lato */
 .skills-group h3 {
     font-family: lato;
     font-size: 20px;
@@ -307,7 +305,7 @@ body {
     padding: 60px 0;
 }
 
-/* Grid inni – 3 kort per rad */
+/* Grid inside – 3 cards per row */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -334,7 +332,6 @@ body {
     padding-top: 16px;
 }
 
-/* ✅ ENDRET: Prosjektkort-overskrifter skal være Lato (h2.project-title + backup) */
 .project-card .project-title,
 .project-card h1,
 .project-card h2 {
@@ -354,7 +351,7 @@ body {
     border-radius: 6px;
 }
 
-/* ---------- PROJECT BUTTONS (FINAL) ---------- */
+/* PROJECT BUTTONS */
 .project-links {
     display: flex;
     gap: 12px;
@@ -412,8 +409,6 @@ body {
     padding: 20px;
     background-color: #EFECE3;
     max-width: 1300px;
-
-    /* ✅ ENDRET: boksen vokser når teksten blir lengre */
     min-height: 700px;
 }
 
@@ -538,7 +533,7 @@ body {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    /* SKILLS – 2 kolonner */
+    /* SKILLS – 2 columns */
     .skills-list {
         grid-template-columns: repeat(2, minmax(220px, 1fr));
         max-width: 750px;
@@ -546,7 +541,7 @@ body {
     }
 }
 
-/* SKILLS – 1 kolonne på mobil */
+/* SKILLS – 1 columns */
 @media (max-width: 600px) {
     .skills-list {
         grid-template-columns: 1fr;
