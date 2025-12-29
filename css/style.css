@@ -120,7 +120,7 @@ body {
 }
 
 .highlight {
-    color: #333;
+    color: #000;
     font-weight: bold;
 }
 
@@ -285,7 +285,7 @@ body {
     font-weight: bold;
 }
 
-/*Procects page*/
+/*Projects page*/
 .projects-heading {
     max-width: 1300px;
     margin: 0 auto 40px auto;
@@ -349,6 +349,11 @@ body {
     width: 100%;
     height: auto;
     border-radius: 6px;
+}
+
+.tech-label, .demo-label  {
+  font-weight: 600;
+  color: #000;
 }
 
 /* PROJECT BUTTONS */
